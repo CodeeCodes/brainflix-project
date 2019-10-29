@@ -21,6 +21,26 @@ body {
           box-sizing: inherit;
 }
 
+h1 {
+  font-size: 24px;
+  line-height: 32px;
+}
+
+h2 {
+  font-size: 14px;
+  line-height: 22px;
+}
+
+h4 {
+  font-size: 13px;
+  line-height: 18px;
+}
+
+h5 {
+  font-size: 12px;
+  line-height: 20px;
+}
+
 .header {
   margin: 10px 5% 0 5%;
   height: 169px;
@@ -132,7 +152,7 @@ body {
 }
 
 .hero__movie-description {
-  margin: 0 4%;
+  margin: 0 5%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
