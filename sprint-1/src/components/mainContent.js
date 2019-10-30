@@ -8,7 +8,7 @@ export default function mainContent(props) {
 	return (
 		<div>
 			<HeroVideo data={props.data} />
-			<Comments />
+			<Comments data={props.data} />
 		</div>
 	);
 }

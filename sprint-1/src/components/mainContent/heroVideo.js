@@ -39,8 +39,8 @@ export default function Hero(props) {
 			<div className="hero__movie-description">
 				<h1 className="hero__movie-heading">{props.data.title}</h1>
 				<div className="flex-movie-icons">
-					<h3 className="hero__movie-heading-two">By Red Cow </h3>
-					<h3 className="hero__movie-heading-two">12/18/2018 </h3>
+					<h3 className="hero__movie-heading-two">{props.data.channel} </h3>
+					<h3 className="hero__movie-heading-two">{props.data.timestamp}</h3>
 				</div>
 				<div className="flex-movie-icons">
 					<img src={Views} alt="views icon" />

@@ -13,13 +13,14 @@
 		margin-bottom: 0;
 	}
 	&__input-text {
-		border: 1px solid $primHoverCta;
+		border: 1px solid #0065ad;
 		width: 70%;
+		margin-left: 12px;
 		border-radius: 4px;
 	}
 	&__input-avatar {
-		width: 50px;
-		height: 50px;
+		width: 35px;
+		height: 35px;
 		border-radius: 50%;
 		margin: 8px 5px 32px;
 	}
@@ -34,5 +35,23 @@
 		color: #fff;
 		background-color: $brainflixBlue;
 		border-radius: 4px;
+	}
+	.comments__input-div-avatar {
+		width: 35px;
+		height: 35px;
+		border-radius: 50%;
+		margin: 8px 5px 32px;
+		float: left;
+	}
+	.comments__input-div-info {
+		display: flex;
+		flex-wrap: wrap;
+		width: 80%;
+	}
+	.comments__input-div-date {
+		height: 20px;
+		margin-top: 20px;
+		margin-left: 5px;
+		opacity: 0.5;
 	}
 }
