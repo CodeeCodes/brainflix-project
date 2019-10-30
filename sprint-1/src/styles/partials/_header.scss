@@ -71,19 +71,24 @@
 	.header {
 		display: flex;
 		height: 80px;
-	}
-	.header .search-bar-text {
-		width: 30%;
-	}
-	.header__search-button {
-		width: 30%;
-		margin-top: 0;
-	}
-	.header__search-bar {
-		justify-content: space-around;
-		height: 80px;
-	}
-	.header__search-avatar {
-		margin: 0;
+
+		.search-bar-text {
+			width: 50%;
+		}
+		.header__search-button {
+			width: 20%;
+			margin-top: 0;
+			margin-left: 6%;
+		}
+		.header__search-bar {
+			justify-content: flex-start;
+			height: 80px;
+			width: 70%;
+			margin-left: 24.5%;
+		}
+		.header__search-avatar {
+			margin: 0;
+			margin-left: 6%;
+		}
 	}
 }

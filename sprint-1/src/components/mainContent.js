@@ -4,8 +4,6 @@ import Comments from "./mainContent/comments";
 import NextVideo from "./mainContent/nextVideo";
 
 export default function mainContent(props) {
-	// const data = props.data;
-
 	return (
 		<div>
 			<HeroVideo data={props.data} />
