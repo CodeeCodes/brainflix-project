@@ -1,0 +1,38 @@
+.comments {
+	margin: 0 5%;
+	&__heading {
+		margin-top: 40px;
+	}
+	&__input {
+		width: 100%;
+	}
+	&__input-heading {
+		opacity: 0.5;
+		margin-left: 20%;
+		margin-top: 32px;
+		margin-bottom: 0;
+	}
+	&__input-text {
+		border: 1px solid $primHoverCta;
+		width: 70%;
+		border-radius: 4px;
+	}
+	&__input-avatar {
+		width: 50px;
+		height: 50px;
+		border-radius: 50%;
+		margin: 8px 5px 32px;
+	}
+	button {
+		display: flex;
+		justify-content: center;
+		width: 70%;
+		height: 48px;
+		border-radius: 4px;
+		margin: 8px 0 24px 20%;
+		border-bottom: 2px solid $dividerColour;
+		color: #fff;
+		background-color: $brainflixBlue;
+		border-radius: 4px;
+	}
+}

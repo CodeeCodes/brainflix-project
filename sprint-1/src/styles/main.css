@@ -99,9 +99,11 @@ h5 {
 .header .search-bar {
   background-image: url("../assets/Icons/svg/Icon-search.svg");
   background-repeat: no-repeat;
-  background-position: left;
+  background-position-x: 10px;
+  background-position-y: center;
   width: 100%;
   height: 49px;
+  padding-left: 35px;
   border-radius: 4px;
 }
 
@@ -156,9 +158,9 @@ h5 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
@@ -170,10 +172,76 @@ h5 {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
 }
 
 .hero .hero__movie-paragraph {
   padding-top: 24px;
   border-top: 1px solid #d5d2d1;
+  margin-top: 0;
+}
+
+.hero .hero__movie-heading-two {
+  margin-right: 8px;
+  margin-bottom: 16px;
+}
+
+.hero .hero__movie-heading-three {
+  margin-right: 8px;
+  margin-left: 8px;
+  margin-bottom: 0;
+  margin-top: 16px;
+  padding-bottom: 24px;
+}
+
+.comments {
+  margin: 0 5%;
+}
+
+.comments__heading {
+  margin-top: 40px;
+}
+
+.comments__input {
+  width: 100%;
+}
+
+.comments__input-heading {
+  opacity: 0.5;
+  margin-left: 20%;
+  margin-top: 32px;
+  margin-bottom: 0;
+}
+
+.comments__input-text {
+  border: 1px solid #0065ad;
+  width: 70%;
+  border-radius: 4px;
+}
+
+.comments__input-avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin: 8px 5px 32px;
+}
+
+.comments button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 70%;
+  height: 48px;
+  border-radius: 4px;
+  margin: 8px 0 24px 20%;
+  border-bottom: 2px solid #d5d2d1;
+  color: #fff;
+  background-color: #0095ff;
+  border-radius: 4px;
 }
 /*# sourceMappingURL=main.css.map */

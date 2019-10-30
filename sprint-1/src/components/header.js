@@ -16,11 +16,10 @@ export default function Header() {
 				<div className="header__search-bar">
 					<input
 						type="search"
-						placeholder="     Search"
+						placeholder="Search"
 						className="search-bar"
 					></input>
 					<button className="header__search-button" type="submit">
-						{"    "}
 						UPLOAD
 					</button>
 					<img src={avatar} alt="avatar" className="header__search-avatar" />

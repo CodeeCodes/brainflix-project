@@ -32,15 +32,28 @@
 	&__movie-description {
 		margin: 0 5%;
 		display: flex;
-		justify-content: space-evenly;
+		justify-content: left;
 		flex-wrap: wrap;
 	}
 	.flex-movie-icons {
 		display: flex;
 		justify-content: space-evenly;
+		align-items: baseline;
 	}
 	.hero__movie-paragraph {
 		padding-top: 24px;
 		border-top: 1px solid $dividerColour;
+		margin-top: 0;
+	}
+	.hero__movie-heading-two {
+		margin-right: 8px;
+		margin-bottom: 16px;
+	}
+	.hero__movie-heading-three {
+		margin-right: 8px;
+		margin-left: 8px;
+		margin-bottom: 0;
+		margin-top: 16px;
+		padding-bottom: 24px;
 	}
 }
