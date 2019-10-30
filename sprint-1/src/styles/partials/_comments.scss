@@ -104,3 +104,8 @@
 		border-bottom: 1px solid $dividerColour;
 	}
 }
+@include large {
+	.comments {
+		width: 712px;
+	}
+}
