@@ -36,7 +36,7 @@
 		margin-left: 4%;
 		margin-top: 8px;
 	}
-	.search-bar {
+	.search-bar-text {
 		background-image: url("../assets/Icons/svg/Icon-search.svg");
 		background-repeat: no-repeat;
 		background-position-x: 10px;
@@ -45,5 +45,45 @@
 		height: 49px;
 		padding-left: 35px;
 		border-radius: 4px;
+	}
+}
+@include medium {
+	h1 {
+		font-size: 36px;
+		line-height: 44px;
+	}
+	h2 {
+		font-size: 24px;
+		line-height: 32px;
+	}
+	h3 {
+		font-size: 16px;
+		line-height: 24px;
+	}
+	h4 {
+		font-size: 14px;
+		line-height: 20px;
+	}
+	h5 {
+		font-size: 12px;
+		line-height: 20px;
+	}
+	.header {
+		display: flex;
+		height: 80px;
+	}
+	.header .search-bar-text {
+		width: 30%;
+	}
+	.header__search-button {
+		width: 30%;
+		margin-top: 0;
+	}
+	.header__search-bar {
+		justify-content: space-around;
+		height: 80px;
+	}
+	.header__search-avatar {
+		margin: 0;
 	}
 }
