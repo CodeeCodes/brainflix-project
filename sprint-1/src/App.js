@@ -37,6 +37,56 @@ function App() {
 				comment:
 					"How can someone be so good!!! You can tell he lives for this and loves to do it every day. Everytime I see him I feel instantly happy! He’s definitely my favorite ever!"
 			}
+		],
+		nextvideo: [
+			{
+				id: "type of <string>",
+				title: "Become A Travel Pro In One Easy Lesson...",
+				channel: "Scotty Cranmer",
+				image: "src/assets/Images/video-list-1.jpg"
+			},
+			{
+				id: "type of <string>",
+				title: "Les Houches The Hidden Gem Of The...",
+				channel: "Scotty Cranmer",
+				image: "assets/Images/video-list-2.jpg"
+			},
+			{
+				id: "type of <string>",
+				title: "Travel Health Useful Medical Information...",
+				channel: "Scotty Cranmer",
+				image: "assets/Images/video-list-3.jpg"
+			},
+			{
+				id: "type of <string>",
+				title: "Cheap Airline Tickets Great Ways To Save",
+				channel: "Emily Harper",
+				image: "assets/Images/video-list-4.jpg"
+			},
+			{
+				id: "type of <string>",
+				title: "Take A Romantic Break In A Boutique Hotel",
+				channel: "Ethan Owen",
+				image: "assets/Images/video-list-5.jpg"
+			},
+			{
+				id: "type of <string>",
+				title: "Choose The Perfect Accommodations",
+				channel: "Lydia Perez",
+				image: "assets/Images/video-list-6.jpg"
+			},
+			{
+				id: "type of <string>",
+				title: "Cruising Destination Ideas",
+				channel: "Timothy Austin",
+				image: "assets/Images/video-list-7.jpg"
+			},
+			{
+				id: "type of <string>",
+				title: "Train Travel On Track For Safety",
+				channel: "Scotty Cranmer",
+				image: "assets/Images/video-list-8.jpg"
+			}
 		]
 	};
 

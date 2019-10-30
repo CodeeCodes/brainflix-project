@@ -8,7 +8,7 @@ import Likes from "../../assets/Icons/svg/Icon-likes.svg";
 
 export default function Hero(props) {
 	// const data = props.data;
-	console.log(props.data);
+	// console.log(props.data);
 	// console.log(data.description);
 
 	return (
