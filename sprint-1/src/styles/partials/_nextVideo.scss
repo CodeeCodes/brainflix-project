@@ -1,5 +1,6 @@
 .next__video {
 	display: flex;
+	align-items: center;
 }
 .next__video-main {
 	margin: 0 5%;
@@ -52,10 +53,11 @@
 @include large {
 	.next__video-main {
 		width: 25.5%;
-		margin: 0;
+		margin: 0 2%;
 	}
 	.next__video {
-		margin: 35px 0 40px 5%;
+		margin-top: 37px;
+		height: 77px;
 	}
 	.next__video-image {
 		width: 43.6%;

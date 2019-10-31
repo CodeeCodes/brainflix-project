@@ -203,7 +203,6 @@ h5 {
 }
 
 .hero__movie-description {
-  margin: 0 5%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -231,6 +230,10 @@ h5 {
   margin-bottom: 0;
   margin-top: 16px;
   padding-bottom: 24px;
+}
+
+.hero__info-div {
+  margin: 0 2%;
 }
 
 @media only screen and (min-width: 768px) {
@@ -268,6 +271,19 @@ h5 {
   }
   .hero__movie-paragraph {
     padding-top: 40px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .hero {
+    height: 540px;
+  }
+  .hero__image {
+    height: 540px;
+  }
+  .hero__movie-heading-two,
+  .hero__movie-heading-three {
+    margin-top: 0;
   }
 }
 
@@ -415,7 +431,7 @@ h5 {
 
 @media only screen and (min-width: 1440px) {
   .comments {
-    margin: 0;
+    margin: 0 2%;
     width: 712px;
   }
   .comments__heading {
@@ -430,6 +446,9 @@ h5 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .next__video-main {
@@ -484,10 +503,11 @@ h5 {
 @media only screen and (min-width: 1440px) {
   .next__video-main {
     width: 25.5%;
-    margin: 0;
+    margin: 0 2%;
   }
   .next__video {
-    margin: 35px 0 40px 5%;
+    margin-top: 37px;
+    height: 77px;
   }
   .next__video-image {
     width: 43.6%;
@@ -506,7 +526,7 @@ h5 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin: 0 12.5%;
+    margin: 40px 12.5% 0 12.5%;
   }
 }
 /*# sourceMappingURL=main.css.map */
