@@ -1,7 +1,8 @@
 import React from "react";
 import Logo from "../assets/Logo/Logo-brainflix.svg";
 import avatar from "../assets/Images/Mohan-muruge.jpg";
-// import MagnifyLogo from "../assets/Icons/svg/Icon-search.svg";
+import MagnifyLogo from "../assets/Icons/svg/Icon-search.svg";
+import PlusSign from "../assets/Icons/svg/Icon-upload.svg";
 export default function Header() {
 	return (
 		<header className="header">
@@ -19,6 +20,7 @@ export default function Header() {
 					className="search-bar-text"
 				></input>
 				<button className="header__search-button" type="submit">
+					<img src={PlusSign} alt="plus sign" />
 					UPLOAD
 				</button>
 				<img src={avatar} alt="avatar" className="header__search-avatar" />
