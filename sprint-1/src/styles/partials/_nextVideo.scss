@@ -37,16 +37,18 @@
 		font-size: 12px;
 		line-height: 20px;
 	}
-
+	.next__video {
+		padding: 8px 0px;
+		height: 88px;
+	}
 	.next__video-image {
-		margin-top: 20px;
 		height: 70px;
 	}
 	.next__video-info {
 		width: 21%;
 	}
-	&-heading {
-		margin: 17px 0 0 0;
+	.next__video-heading {
+		margin: 0;
 	}
 }
 

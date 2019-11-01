@@ -1,37 +1,8 @@
 .hero {
 	width: 100vw;
 	margin-top: 16px;
-	&__image {
+	&__video {
 		width: 100%;
-	}
-	&__image-icons {
-		display: flex;
-		justify-content: space-around;
-		bottom: 55px;
-		position: relative;
-		margin-bottom: 5px;
-	}
-	&__image-icon-one {
-		background-color: #000;
-		opacity: 0.6;
-		border-radius: 4px;
-		width: 10%;
-		height: 30px;
-		display: flex;
-		justify-content: space-around;
-	}
-	&__image-icon-two {
-		background-color: #000;
-		opacity: 0.6;
-		border-radius: 4px;
-		width: 20%;
-		height: 30px;
-		display: flex;
-		justify-content: space-around;
-	}
-
-	&__info-div {
-		margin: 0 2%;
 	}
 }
 @include medium {
@@ -61,7 +32,7 @@
 	@include large {
 		.hero {
 			height: 540px;
-			&__image {
+			&__video {
 				height: 540px;
 			}
 		}

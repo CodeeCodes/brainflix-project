@@ -154,49 +154,8 @@ h5 {
   margin-top: 16px;
 }
 
-.hero__image {
+.hero__video {
   width: 100%;
-}
-
-.hero__image-icons {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  bottom: 55px;
-  position: relative;
-  margin-bottom: 5px;
-}
-
-.hero__image-icon-one {
-  background-color: #000;
-  opacity: 0.6;
-  border-radius: 4px;
-  width: 10%;
-  height: 30px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-}
-
-.hero__image-icon-two {
-  background-color: #000;
-  opacity: 0.6;
-  border-radius: 4px;
-  width: 20%;
-  height: 30px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-}
-
-.hero__info-div {
-  margin: 0 2%;
 }
 
 @media only screen and (min-width: 768px) {
@@ -229,7 +188,7 @@ h5 {
   .hero {
     height: 540px;
   }
-  .hero__image {
+  .hero__video {
     height: 540px;
   }
 }
@@ -320,6 +279,10 @@ h5 {
 
 .comments {
   margin: 0 5%;
+}
+
+.comments__nav {
+  display: inline-block;
 }
 
 .comments__heading {
@@ -413,39 +376,33 @@ h5 {
     font-size: 12px;
     line-height: 20px;
   }
-}
-
-.comments__input-div {
-  border-bottom: 1px solid #d5d2d1;
-}
-
-.comments__heading {
-  margin-top: 64px;
-}
-
-.comments__input-text {
-  width: 64.6%;
-  height: 40px;
-}
-
-.comments button {
-  width: 26.6%;
-  height: 40px;
-  margin: 0;
-  margin-left: 5%;
-}
-
-.comments__input-avatar {
-  margin: 0;
-  margin-left: 1%;
-}
-
-.comments__nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding-bottom: 24px;
-  border-bottom: 1px solid #d5d2d1;
+  .comments__input-div {
+    border-bottom: 1px solid #d5d2d1;
+  }
+  .comments__heading {
+    margin-top: 64px;
+  }
+  .comments__input-text {
+    width: 64.6%;
+    height: 40px;
+  }
+  .comments button {
+    width: 26.6%;
+    height: 40px;
+    margin: 0;
+    margin-left: 5%;
+  }
+  .comments__input-avatar {
+    margin: 0;
+    margin-left: 1%;
+  }
+  .comments__nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-bottom: 24px;
+    border-bottom: 1px solid #d5d2d1;
+  }
 }
 
 @media only screen and (min-width: 1440px) {
@@ -508,15 +465,18 @@ h5 {
     font-size: 12px;
     line-height: 20px;
   }
+  .next__video {
+    padding: 8px 0px;
+    height: 88px;
+  }
   .next__video-image {
-    margin-top: 20px;
     height: 70px;
   }
   .next__video-info {
     width: 21%;
   }
-  -heading {
-    margin: 17px 0 0 0;
+  .next__video-heading {
+    margin: 0;
   }
 }
 
