@@ -1,7 +1,6 @@
 import React from "react";
 
-export default function nextVideo(props) {
-	// console.log(props.data.nextvideo[0]);
+export default function NextVideo(props) {
 	const videoImage =
 		props.data.nextvideo &&
 		props.data.nextvideo.map(function(video) {

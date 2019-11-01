@@ -1,0 +1,73 @@
+.movie {
+	&__description {
+		margin: 0 4%;
+		display: flex;
+		justify-content: left;
+		flex-wrap: wrap;
+	}
+	&__paragraph {
+		padding-top: 24px;
+		border-top: 1px solid $dividerColour;
+		margin-top: 0;
+	}
+	&__heading-two {
+		margin-right: 8px;
+		margin-bottom: 16px;
+	}
+	&__heading-three {
+		margin-right: 8px;
+		margin-left: 8px;
+		margin-bottom: 0;
+		margin-top: 16px;
+		padding-bottom: 24px;
+	}
+}
+.flex-movie-icons {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: baseline;
+}
+@include medium {
+	h1 {
+		font-size: 36px;
+		line-height: 44px;
+	}
+	h2 {
+		font-size: 24px;
+		line-height: 32px;
+	}
+	h3 {
+		font-size: 16px;
+		line-height: 24px;
+	}
+	h4 {
+		font-size: 14px;
+		line-height: 20px;
+	}
+	h5 {
+		font-size: 12px;
+		line-height: 20px;
+	}
+	.movie {
+		&__heading-two {
+			margin-bottom: 24px;
+			margin-top: 24px;
+		}
+		&__heading-three {
+			margin-bottom: 24px;
+			margin-top: 24px;
+			padding: 0;
+		}
+		&__movie-paragraph {
+			padding-top: 40px;
+		}
+	}
+}
+@include large {
+	.movie {
+		&__heading-two,
+		&__heading-three {
+			margin-top: 0;
+		}
+	}
+}
