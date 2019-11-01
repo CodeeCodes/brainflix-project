@@ -1,6 +1,5 @@
 .movie {
 	&__description {
-		margin: 0 4%;
 		display: flex;
 		justify-content: left;
 		flex-wrap: wrap;
@@ -10,23 +9,24 @@
 		border-top: 1px solid $dividerColour;
 		margin-top: 0;
 	}
-	// &__heading-two {
-	// 	margin-right: 8px;
-	// 	margin-bottom: 16px;
-	// }
-	// &__heading-three {
-	// 	margin-right: 8px;
-	// 	margin-left: 8px;
-	// 	margin-bottom: 0;
-	// 	margin-top: 16px;
-	// 	padding-bottom: 24px;
-	// }
+	&__icons {
+		height: 20px;
+	}
+	&__heading,
+	&__heading-two,
+	&__heading-three {
+		margin-top: 0;
+	}
+}
+.main-movie-div {
+	margin: 20px 4%;
 }
 .flex-movie-icons {
 	display: flex;
 	justify-content: space-evenly;
 	height: 20px;
 }
+
 @include medium {
 	h1 {
 		font-size: 36px;
@@ -49,23 +49,28 @@
 		line-height: 20px;
 	}
 	.movie {
-		&__description {
-			margin: 40px 4%;
+		&__heading {
+			margin-right: 33px;
+
+			&-two {
+				margin-top: 10px;
+				margin-left: 1%;
+				height: 24px;
+			}
+			&-three {
+				margin-right: 4%;
+				margin-left: 1%;
+			}
 		}
-		// &__heading-two,
-		// &__heading-three {
-		// 	margin: 0;
-		// }
-		// &__movie-paragraph {
-		// 	padding-top: 40px;
-		// }
+	}
+	&__icons {
+		height: 24px;
 	}
 }
 @include large {
 	.movie {
-		&__heading-two,
-		&__heading-three {
-			margin-top: 0;
-		}
+	}
+	.main-movie-div {
+		margin: 0;
 	}
 }

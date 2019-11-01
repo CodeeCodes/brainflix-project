@@ -200,7 +200,6 @@ h5 {
 }
 
 .movie__description {
-  margin: 0 4%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -215,6 +214,18 @@ h5 {
   padding-top: 24px;
   border-top: 1px solid #d5d2d1;
   margin-top: 0;
+}
+
+.movie__icons {
+  height: 20px;
+}
+
+.movie__heading, .movie__heading-two, .movie__heading-three {
+  margin-top: 0;
+}
+
+.main-movie-div {
+  margin: 20px 4%;
 }
 
 .flex-movie-icons {
@@ -248,19 +259,27 @@ h5 {
     font-size: 12px;
     line-height: 20px;
   }
-  .movie__description {
-    margin: 40px 4%;
+  .movie__heading {
+    margin-right: 33px;
+  }
+  .movie__heading-two {
+    margin-top: 10px;
+    margin-left: 1%;
+    height: 24px;
+  }
+  .movie__heading-three {
+    margin-right: 4%;
+    margin-left: 1%;
+  }
+  __icons {
+    height: 24px;
   }
 }
 
 @media only screen and (min-width: 1440px) {
-  .movie__heading-two, .movie__heading-three {
-    margin-top: 0;
+  .main-movie-div {
+    margin: 0;
   }
-}
-
-.comments {
-  margin: 0 5%;
 }
 
 .comments__nav {
@@ -366,6 +385,9 @@ h5 {
   }
   .comments__input-div {
     border-bottom: 1px solid #d5d2d1;
+  }
+  .comments__input-heading {
+    margin-left: 7.7%;
   }
   .comments__heading {
     margin-top: 64px;
@@ -479,17 +501,18 @@ h5 {
     margin: 0 2%;
   }
   .next__video {
-    margin-top: 37px;
-    height: 77px;
+    margin: 20px 0;
   }
   .next__video-image {
     margin-top: 5px;
   }
   .next__video-info {
     width: 56%;
+    height: 83px;
   }
   .next__video-heading {
-    margin: 6px 0 5px 7%;
+    margin: 0;
+    height: 20px;
   }
 }
 

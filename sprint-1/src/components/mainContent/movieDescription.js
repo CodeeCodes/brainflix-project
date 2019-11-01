@@ -11,10 +11,10 @@ export default function MovieDescription(props) {
 			<h3 className="movie__heading-two">{props.data.channel} </h3>
 			<h3 className="movie__heading-two">{props.data.timestamp}</h3>
 
-			<img src={Views} alt="views icon" />
+			<img src={Views} alt="views icon" className="movie__icons" />
 			<h3 className="movie__heading-three">{props.data.views}</h3>
 
-			<img src={Likes} alt="likes icon" />
+			<img src={Likes} alt="likes icon" className="movie__icons" />
 			<h3 className="movie__heading-three">{props.data.likes}</h3>
 
 			<div className="movie__paragraph">{props.data.description}</div>
