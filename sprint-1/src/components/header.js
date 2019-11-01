@@ -1,7 +1,7 @@
 import React from "react";
 import Logo from "../assets/Logo/Logo-brainflix.svg";
 import avatar from "../assets/Images/Mohan-muruge.jpg";
-import MagnifyLogo from "../assets/Icons/svg/Icon-search.svg";
+// import MagnifyLogo from "../assets/Icons/svg/Icon-search.svg";
 import PlusSign from "../assets/Icons/svg/Icon-upload.svg";
 export default function Header() {
 	return (
