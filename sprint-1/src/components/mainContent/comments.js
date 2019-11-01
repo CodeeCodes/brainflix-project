@@ -5,9 +5,9 @@ export default function Comments(props) {
 	// console.log(props.data);
 	const newComments =
 		props.data.comments &&
-		props.data.comments.map(function(comment) {
+		props.data.comments.map(function(comment, index) {
 			return (
-				<div className="comments__input-div">
+				<div className="comments__input-div" key={index}>
 					<img
 						src={avatar}
 						alt="avatar"

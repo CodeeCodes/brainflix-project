@@ -1,10 +1,10 @@
 @import "./partials/colours";
 @import "./partials/breakpoints";
-// @import "./partials/fonts";
+@import "./partials/fonts";
 html,
 body {
 	margin: 0;
-	font-family: "AvenirRegular";
+	font-family: "AvenirLight";
 	line-height: 1.8rem;
 	height: 100vh;
 	box-sizing: border-box;

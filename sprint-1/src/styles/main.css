@@ -4,10 +4,28 @@
 /*media query for mobile using max width so that it doesn't have a break at min-width*/
 /*media query for tablet*/
 /*media query for  landscape, large pixel density desktop*/
+@font-face {
+  src: url("../assets/fonts/avenir/avenirLight.otf");
+  font-family: "AvenirLight";
+  font-style: normal;
+}
+
+@font-face {
+  src: url("../assets/fonts/avenir/avenirBold.otf");
+  font-family: "AvenirBold";
+  font-style: normal;
+}
+
+@font-face {
+  src: url("../assets/fonts/avenir/avenirRegular.otf");
+  font-family: "AvenirRegular";
+  font-style: normal;
+}
+
 html,
 body {
   margin: 0;
-  font-family: "AvenirRegular";
+  font-family: "AvenirLight";
   line-height: 1.8rem;
   height: 100vh;
   -webkit-box-sizing: border-box;
@@ -277,6 +295,12 @@ h5 {
 }
 
 @media only screen and (min-width: 1440px) {
+  .movie__heading {
+    margin-right: 123px;
+  }
+  .movie__heading-two {
+    margin-top: 16px;
+  }
   .main-movie-div {
     margin: 0;
   }
@@ -417,7 +441,6 @@ h5 {
 
 @media only screen and (min-width: 1440px) {
   .comments {
-    margin: 0 2%;
     width: 712px;
   }
   .comments__heading {

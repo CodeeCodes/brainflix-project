@@ -69,6 +69,12 @@
 }
 @include large {
 	.movie {
+		&__heading {
+			margin-right: 123px;
+			&-two {
+				margin-top: 16px;
+			}
+		}
 	}
 	.main-movie-div {
 		margin: 0;

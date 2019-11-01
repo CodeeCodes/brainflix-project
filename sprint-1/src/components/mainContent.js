@@ -13,7 +13,7 @@ export default function mainContent(props) {
 					<MovieDescription data={props.data} />
 					<Comments data={props.data} />
 				</div>
-				<NextVideo data={props.data} />
+				<NextVideo data={props.data}  />
 			</div>
 		</div>
 	);
