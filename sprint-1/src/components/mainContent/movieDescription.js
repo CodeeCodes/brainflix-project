@@ -7,18 +7,16 @@ export default function MovieDescription(props) {
 	return (
 		<div className="movie__description">
 			<h1 className="movie__heading">{props.data.title}</h1>
-			<div className="flex-movie-icons">
-				<h3 className="movie__heading-two">{props.data.channel} </h3>
-				<h3 className="movie__heading-two">{props.data.timestamp}</h3>
-			</div>
-			<div className="flex-movie-icons">
-				<img src={Views} alt="views icon" />
-				<h3 className="movie__heading-three">{props.data.views}</h3>
-			</div>
-			<div className="flex-movie-icons">
-				<img src={Likes} alt="likes icon" />
-				<h3 className="movie__heading-three">{props.data.likes}</h3>
-			</div>
+
+			<h3 className="movie__heading-two">{props.data.channel} </h3>
+			<h3 className="movie__heading-two">{props.data.timestamp}</h3>
+
+			<img src={Views} alt="views icon" />
+			<h3 className="movie__heading-three">{props.data.views}</h3>
+
+			<img src={Likes} alt="likes icon" />
+			<h3 className="movie__heading-three">{props.data.likes}</h3>
+
 			<div className="movie__paragraph">{props.data.description}</div>
 		</div>
 	);

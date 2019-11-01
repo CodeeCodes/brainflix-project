@@ -1,21 +1,25 @@
 .next__video {
 	display: flex;
 	align-items: center;
-}
-.next__video-main {
-	margin: 0 5%;
-}
-.next__video-image {
-	width: 120px;
-	height: 70px;
-	border-radius: 4px;
-	margin-right: 5%;
-	object-fit: cover;
-}
-.next__video-info {
-	width: 50%;
-}
+	margin: 20px 0 20px 0;
 
+	&-main {
+		margin: 0 5%;
+	}
+	&-image {
+		width: 120px;
+		height: 70px;
+		border-radius: 4px;
+		margin-right: 5%;
+		object-fit: cover;
+	}
+	&-info {
+		width: 50%;
+	}
+	&-heading {
+		margin: 0;
+	}
+}
 @include medium {
 	h1 {
 		font-size: 36px;
