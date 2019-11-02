@@ -12,15 +12,26 @@
 	&__icons {
 		height: 20px;
 		margin-top: 4px;
-		margin-right: 2%;
+		margin-right: 2.8%;
 	}
-	&__heading,
-	&__heading-three {
+
+	&__heading {
 		margin-top: 0;
 		margin-right: 19px;
+		font-family: "AvenirBold";
+	}
+	&__heading-three {
+		margin: 0 6.5% 24px 0;
+		font-family: "AvenirULight";
 	}
 	&__heading-two {
-		margin-right: 15%;
+		margin-right: 2.8%;
+		font-family: "AvenirBold";
+	}
+	&__heading-two-special {
+		margin-right: 20%;
+		font-family: "AvenirULight";
+		opacity: 0.6;
 	}
 }
 .main-movie-div {
@@ -56,28 +67,41 @@
 	.movie {
 		&__heading {
 			margin-right: 33px;
+			margin-bottom: 24px;
 
 			&-two {
-				margin-top: 10px;
+				margin-top: 0;
+				margin-bottom: 0;
 				margin-left: 1%;
 				height: 24px;
 			}
 			&-three {
 				margin-right: 4%;
-				margin-left: 1%;
+				margin-bottom: 0;
+				margin-left: 1.14%;
 			}
 		}
-	}
-	&__icons {
-		height: 24px;
+		&__heading-two-special {
+			margin-top: 0;
+			margin-bottom: 0;
+		}
+
+		&__icons {
+			height: 24px;
+			margin-right: 0;
+			margin-top: 1px;
+		}
+		&__paragraph {
+			margin-top: 24px;
+		}
 	}
 }
 @include large {
 	.movie {
 		&__heading {
 			margin-right: 123px;
-			&-two {
-				margin-top: 16px;
+			&-two-special {
+				margin-right: 39%;
 			}
 		}
 	}

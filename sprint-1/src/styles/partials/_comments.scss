@@ -38,7 +38,7 @@
 		width: 70%;
 		height: 48px;
 		border-radius: 4px;
-		margin: 8px 0 24px 20%;
+		margin: 14px 0 24px 20%;
 		border-bottom: 2px solid $dividerColour;
 		color: #fff;
 		background-color: $brainflixBlue;
@@ -92,16 +92,18 @@
 
 		&__heading {
 			margin-top: 64px;
+			margin-bottom: 32px;
 		}
 		&__input-text {
-			width: 64.6%;
+			width: 78%;
 			height: 40px;
 		}
 		button {
-			width: 26.6%;
+			width: 25.71%;
 			height: 40px;
 			margin: 0;
-			margin-left: 5%;
+			margin-left: 2.3%;
+			margin-right: 5.7%;
 		}
 		&__input-avatar {
 			margin: 0;

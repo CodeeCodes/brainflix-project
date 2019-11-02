@@ -12,7 +12,7 @@ export default function NextVideo(props) {
 						className="next__video-image"
 					/>
 					<div className=" next__video-info">
-						<h5 className="next__video-heading">{video.title}</h5>
+						<h4 className="next__video-heading-bold">{video.title}</h4>
 						<h5 className="next__video-heading">{video.channel}</h5>
 					</div>
 				</div>
