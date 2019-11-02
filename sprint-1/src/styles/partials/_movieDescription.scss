@@ -11,11 +11,16 @@
 	}
 	&__icons {
 		height: 20px;
+		margin-top: 4px;
+		margin-right: 2%;
 	}
 	&__heading,
-	&__heading-two,
 	&__heading-three {
 		margin-top: 0;
+		margin-right: 19px;
+	}
+	&__heading-two {
+		margin-right: 15%;
 	}
 }
 .main-movie-div {

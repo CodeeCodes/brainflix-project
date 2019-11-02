@@ -25,7 +25,7 @@
 html,
 body {
   margin: 0;
-  font-family: "AvenirLight";
+  font-family: "AvenirRegular";
   line-height: 1.8rem;
   height: 100vh;
   -webkit-box-sizing: border-box;
@@ -236,10 +236,17 @@ h5 {
 
 .movie__icons {
   height: 20px;
+  margin-top: 4px;
+  margin-right: 2%;
 }
 
-.movie__heading, .movie__heading-two, .movie__heading-three {
+.movie__heading, .movie__heading-three {
   margin-top: 0;
+  margin-right: 19px;
+}
+
+.movie__heading-two {
+  margin-right: 15%;
 }
 
 .main-movie-div {
@@ -304,6 +311,10 @@ h5 {
   .main-movie-div {
     margin: 0;
   }
+}
+
+.comments__input-div {
+  border-bottom: 1px solid #d5d2d1;
 }
 
 .comments__nav {
@@ -406,9 +417,6 @@ h5 {
   h5 {
     font-size: 12px;
     line-height: 20px;
-  }
-  .comments__input-div {
-    border-bottom: 1px solid #d5d2d1;
   }
   .comments__input-heading {
     margin-left: 7.7%;

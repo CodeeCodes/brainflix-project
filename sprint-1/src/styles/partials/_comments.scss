@@ -1,4 +1,7 @@
 .comments {
+	&__input-div {
+		border-bottom: 1px solid $dividerColour;
+	}
 	&__nav {
 		display: inline-block;
 	}
@@ -83,9 +86,6 @@
 	}
 
 	.comments {
-		&__input-div {
-			border-bottom: 1px solid $dividerColour;
-		}
 		&__input-heading {
 			margin-left: 7.7%;
 		}
