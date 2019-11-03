@@ -124,6 +124,10 @@ h5 {
   border-radius: 4px;
 }
 
+.header .plusSign {
+  padding-right: 5%;
+}
+
 @media only screen and (min-width: 768px) {
   h1 {
     font-size: 36px;
@@ -155,7 +159,7 @@ h5 {
     margin-right: 5%;
   }
   .header__search-button {
-    width: 20%;
+    width: 24%;
     margin-left: 6%;
     margin-top: 16px;
   }
@@ -170,7 +174,7 @@ h5 {
   .header__search-avatar {
     margin: 0;
     margin-top: 15px;
-    margin-left: 8.5%;
+    margin-left: 6.5%;
   }
   .header__search-logo {
     margin-top: 20px;
@@ -273,17 +277,22 @@ h5 {
 
 .movie__heading-two {
   margin-right: 2.8%;
+  margin-top: 0;
+  margin-bottom: 32px;
   font-family: "AvenirBold";
 }
 
 .movie__heading-two-special {
   margin-right: 20%;
+  margin-top: 0;
+  margin-bottom: 32px;
   font-family: "AvenirULight";
   opacity: 0.6;
 }
 
-.main-movie-div {
-  margin-top: 20px;
+.movie__paragraph-text {
+  margin: 0;
+  text-align: justify;
 }
 
 .flex-movie-icons {
@@ -333,8 +342,7 @@ h5 {
     margin-left: 1.14%;
   }
   .movie__heading-two-special {
-    margin-top: 0;
-    margin-bottom: 0;
+    margin: 0 31% 0 0;
   }
   .movie__icons {
     height: 24px;
@@ -343,6 +351,10 @@ h5 {
   }
   .movie__paragraph {
     margin-top: 24px;
+    padding-top: 40px;
+  }
+  .movie__paragraph-text {
+    width: 72%;
   }
 }
 
@@ -356,9 +368,6 @@ h5 {
   .movie__heading-three {
     margin-right: 4.5%;
   }
-  .main-movie-div {
-    margin: 0;
-  }
 }
 
 .comments__input-div {
@@ -367,10 +376,13 @@ h5 {
 
 .comments__nav {
   display: inline-block;
+  width: 100%;
+  border-bottom: 1px solid #d5d2d1;
 }
 
 .comments__heading {
   margin-top: 40px;
+  margin-bottom: 0;
 }
 
 .comments__input {
@@ -386,8 +398,7 @@ h5 {
 
 .comments__input-text {
   border: 1px solid #0065ad;
-  width: 70%;
-  margin-left: 12px;
+  width: 84%;
   border-radius: 4px;
 }
 
@@ -395,7 +406,7 @@ h5 {
   width: 35px;
   height: 35px;
   border-radius: 50%;
-  margin: 15px 5px 15px;
+  margin: 0 11px 36px 0;
 }
 
 .comments__input-div {
@@ -411,11 +422,10 @@ h5 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 70%;
+  width: 84%;
   height: 48px;
   border-radius: 4px;
-  margin: 14px 0 24px 20%;
-  border-bottom: 2px solid #d5d2d1;
+  margin: 14px 0 24px 16%;
   color: #fff;
   background-color: #0095ff;
   border-radius: 4px;
@@ -426,7 +436,6 @@ h5 {
   height: 35px;
   border-radius: 50%;
   margin: 8px 5px 32px;
-  float: left;
 }
 
 .comments__input-div-info {
@@ -443,6 +452,16 @@ h5 {
   margin-top: 20px;
   margin-left: 5px;
   opacity: 0.5;
+}
+
+.comments__flex {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 @media only screen and (min-width: 768px) {
@@ -486,7 +505,7 @@ h5 {
   }
   .comments__input-avatar {
     margin: 0;
-    margin-left: 1%;
+    margin-right: 1%;
   }
   .comments__nav {
     display: -webkit-box;
@@ -494,6 +513,18 @@ h5 {
     display: flex;
     padding-bottom: 24px;
     border-bottom: 1px solid #d5d2d1;
+  }
+  .comments__input-div-avatar {
+    margin-right: 2px;
+    margin-left: 1px;
+  }
+  .comments__input-div-paragraph {
+    margin-top: 0;
+  }
+  .comments__flex {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
   }
 }
 
@@ -507,9 +538,6 @@ h5 {
   .comments__input-div {
     width: 100%;
   }
-  .comments__input-div-paragraph {
-    margin-top: 0;
-  }
 }
 
 .next__video {
@@ -519,7 +547,7 @@ h5 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 20px 0 20px 0;
+  margin: 24px 0;
 }
 
 .next__video-main-heading {
@@ -574,6 +602,7 @@ h5 {
   .next__video {
     padding: 8px 0px;
     height: 88px;
+    margin: 10px 0;
   }
   .next__video-image {
     height: 70px;
@@ -591,7 +620,7 @@ h5 {
     width: 25.5%;
   }
   .next__video {
-    margin: 17px 0;
+    margin: 27.1px 0 0 0;
   }
   .next__video-main {
     margin-left: 2%;
@@ -619,8 +648,19 @@ h5 {
 }
 
 .main-desktop-flex {
-  margin-left: 4%;
-  margin-right: 4%;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 10px;
+}
+
+.main-movie-div {
+  margin-top: 32px;
+}
+
+@media only screen and (min-width: 768px) {
+  .main-movie-div {
+    margin-top: 0;
+  }
 }
 
 @media only screen and (min-width: 1440px) {
@@ -628,7 +668,7 @@ h5 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin: 40px 12.5% 0 12.5%;
+    margin: 40px 12.5% 10px 12.5%;
   }
   .main-movie-div {
     width: 66%;

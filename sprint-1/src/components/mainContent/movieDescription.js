@@ -17,7 +17,9 @@ export default function MovieDescription(props) {
 			<img src={Likes} alt="likes icon" className="movie__icons" />
 			<h3 className="movie__heading-three">{props.data.likes}</h3>
 
-			<div className="movie__paragraph">{props.data.description}</div>
+			<div className="movie__paragraph">
+				<p className="movie__paragraph-text">{props.data.description}</p>
+			</div>
 		</div>
 	);
 }

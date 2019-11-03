@@ -14,8 +14,10 @@ export default function Comments(props) {
 						className="comments__input-div-avatar"
 					/>
 					<div className="comments__input-div-info">
-						<h3 className="comments__input-div-heading">{comment.name}</h3>
-						<h4 className="comments__input-div-date">{comment.date}</h4>
+						<div className="comments__flex">
+							<h3 className="comments__input-div-heading">{comment.name}</h3>
+							<h4 className="comments__input-div-date">{comment.date}</h4>
+						</div>
 						<p className="comments__input-div-paragraph">{comment.comment}</p>
 					</div>
 				</div>

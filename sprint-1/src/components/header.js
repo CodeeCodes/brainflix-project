@@ -20,7 +20,7 @@ export default function Header() {
 					className="search-bar-text"
 				></input>
 				<button className="header__search-button" type="submit">
-					<img src={PlusSign} alt="plus sign" />
+					<img src={PlusSign} alt="plus sign" className="plusSign"/>
 					UPLOAD
 				</button>
 				<img src={avatar} alt="avatar" className="header__search-avatar" />

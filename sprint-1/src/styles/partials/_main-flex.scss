@@ -1,12 +1,21 @@
 .main-desktop-flex {
-	margin-left: 4%;
-	margin-right: 4%;
+	margin-left: 5%;
+	margin-right: 5%;
+	margin-bottom: 10px;
+}
+.main-movie-div {
+	margin-top: 32px;
+}
+@include medium {
+	.main-movie-div {
+		margin-top: 0;
+	}
 }
 
 @include large {
 	.main-desktop-flex {
 		display: flex;
-		margin: 40px 12.5% 0 12.5%;
+		margin: 40px 12.5% 10px 12.5%;
 	}
 	.main-movie-div {
 		width: 66%;

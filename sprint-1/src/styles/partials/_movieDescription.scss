@@ -26,17 +26,23 @@
 	}
 	&__heading-two {
 		margin-right: 2.8%;
+		margin-top: 0;
+		margin-bottom: 32px;
 		font-family: "AvenirBold";
 	}
 	&__heading-two-special {
 		margin-right: 20%;
+		margin-top: 0;
+		margin-bottom: 32px;
 		font-family: "AvenirULight";
 		opacity: 0.6;
 	}
+	&__paragraph-text {
+		margin: 0;
+		text-align: justify;
+	}
 }
-.main-movie-div {
-	margin-top: 20px;
-}
+
 .flex-movie-icons {
 	display: flex;
 	justify-content: space-evenly;
@@ -82,8 +88,7 @@
 			}
 		}
 		&__heading-two-special {
-			margin-top: 0;
-			margin-bottom: 0;
+			margin: 0 31% 0 0;
 		}
 
 		&__icons {
@@ -93,8 +98,13 @@
 		}
 		&__paragraph {
 			margin-top: 24px;
+			padding-top: 40px;
+		}
+		&__paragraph-text {
+			width: 72%;
 		}
 	}
+
 }
 @include large {
 	.movie {
@@ -108,8 +118,5 @@
 				margin-right: 4.5%;
 			}
 		}
-	}
-	.main-movie-div {
-		margin: 0;
 	}
 }
