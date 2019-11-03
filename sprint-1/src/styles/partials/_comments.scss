@@ -123,8 +123,12 @@
 		&__heading {
 			margin-top: 40px;
 		}
-	}
-	.comments__input-div {
-		width: 100%;
+
+		&__input-div {
+			width: 100%;
+		}
+		&__input-div-paragraph {
+			margin-top: 0;
+		}
 	}
 }

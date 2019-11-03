@@ -66,7 +66,7 @@ h5 {
 }
 
 .header {
-  margin: 10px 5% 0 5%;
+  margin: 0 5%;
   height: 169px;
 }
 
@@ -150,26 +150,41 @@ h5 {
     display: -ms-flexbox;
     display: flex;
     height: 80px;
+    padding-bottom: 16px;
+    margin-left: 5%;
+    margin-right: 5%;
   }
-  .header .search-bar-text {
-    width: 50%;
-  }
-  .header .header__search-button {
+  .header__search-button {
     width: 20%;
-    margin-top: 0;
     margin-left: 6%;
+    margin-top: 16px;
   }
-  .header .header__search-bar {
+  .header__search-bar {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
     height: 80px;
     width: 70%;
-    margin-left: 24.5%;
+    margin-left: 28.5%;
   }
-  .header .header__search-avatar {
+  .header__search-avatar {
     margin: 0;
-    margin-left: 6%;
+    margin-top: 15px;
+    margin-left: 8.5%;
+  }
+  .header__search-logo {
+    margin-top: 20px;
+  }
+  .header .search-bar-text {
+    width: 50%;
+    margin-top: 16px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (min-width: 1440px) {
+  .header {
+    margin-left: 12.5%;
+    margin-right: 12.5%;
   }
 }
 
@@ -268,7 +283,7 @@ h5 {
 }
 
 .main-movie-div {
-  margin: 20px 4%;
+  margin-top: 20px;
 }
 
 .flex-movie-icons {
@@ -336,7 +351,10 @@ h5 {
     margin-right: 123px;
   }
   .movie__heading-two-special {
-    margin-right: 39%;
+    margin-right: 30%;
+  }
+  .movie__heading-three {
+    margin-right: 4.5%;
   }
   .main-movie-div {
     margin: 0;
@@ -489,6 +507,9 @@ h5 {
   .comments__input-div {
     width: 100%;
   }
+  .comments__input-div-paragraph {
+    margin-top: 0;
+  }
 }
 
 .next__video {
@@ -499,10 +520,6 @@ h5 {
       -ms-flex-align: center;
           align-items: center;
   margin: 20px 0 20px 0;
-}
-
-.next__video-main {
-  margin: 0 5%;
 }
 
 .next__video-main-heading {
@@ -572,30 +589,38 @@ h5 {
 @media only screen and (min-width: 1440px) {
   .next__video-main {
     width: 25.5%;
-    margin: 0 2%;
   }
   .next__video {
-    margin: 20px 0;
+    margin: 17px 0;
   }
   .next__video-main {
-    margin: 0;
-    width: 44%;
     margin-left: 2%;
+    width: 44%;
+  }
+  .next__video-main-heading {
+    margin-top: 0;
+    margin-bottom: 32px;
   }
   .next__video-image {
     margin-top: 0;
   }
   .next__video-info {
+    padding-top: 10px;
     width: 56%;
-    height: 83px;
+    height: 77px;
   }
   .next__video-heading {
-    margin: 0;
     height: 20px;
+    margin-top: 0;
   }
   .next__video-heading-bold {
     padding-bottom: 0;
   }
+}
+
+.main-desktop-flex {
+  margin-left: 4%;
+  margin-right: 4%;
 }
 
 @media only screen and (min-width: 1440px) {

@@ -1,3 +1,8 @@
+.main-desktop-flex {
+	margin-left: 4%;
+	margin-right: 4%;
+}
+
 @include large {
 	.main-desktop-flex {
 		display: flex;

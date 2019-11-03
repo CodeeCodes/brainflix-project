@@ -4,7 +4,6 @@
 	margin: 20px 0 20px 0;
 
 	&-main {
-		margin: 0 5%;
 		&-heading {
 			opacity: 0.6;
 			margin: 40px 0;
@@ -70,25 +69,28 @@
 @include large {
 	.next__video-main {
 		width: 25.5%;
-		margin: 0 2%;
 	}
 	.next__video {
-		margin: 20px 0;
+		margin: 17px 0;
 		&-main {
-			margin: 0;
-			width: 44%;
 			margin-left: 2%;
+			width: 44%;
+			&-heading {
+				margin-top: 0;
+				margin-bottom: 32px;
+			}
 		}
 		&-image {
 			margin-top: 0;
 		}
 		&-info {
+			padding-top: 10px;
 			width: 56%;
-			height: 83px;
+			height: 77px;
 		}
 		&-heading {
-			margin: 0;
 			height: 20px;
+			margin-top: 0;
 
 			&-bold {
 				padding-bottom: 0;

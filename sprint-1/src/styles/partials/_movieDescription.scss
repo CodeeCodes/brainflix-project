@@ -35,7 +35,7 @@
 	}
 }
 .main-movie-div {
-	margin: 20px 4%;
+	margin-top: 20px;
 }
 .flex-movie-icons {
 	display: flex;
@@ -100,8 +100,12 @@
 	.movie {
 		&__heading {
 			margin-right: 123px;
+
 			&-two-special {
-				margin-right: 39%;
+				margin-right: 30%;
+			}
+			&-three {
+				margin-right: 4.5%;
 			}
 		}
 	}
