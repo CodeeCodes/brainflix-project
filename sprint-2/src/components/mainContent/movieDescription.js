@@ -3,7 +3,7 @@ import Views from "../../assets/Icons/svg/Icon-views.svg";
 import Likes from "../../assets/Icons/svg/Icon-likes.svg";
 
 export default function MovieDescription(props) {
-	// console.log(props.data);
+	console.log(props);
 	return (
 		<div className="movie__description">
 			<h1 className="movie__heading">{props.data.title}</h1>
