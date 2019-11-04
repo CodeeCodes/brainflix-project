@@ -1,6 +1,9 @@
 .hero {
 	width: 100vw;
 	height: 183px;
+	display: flex;
+	justify-content: center;
+	background-color: #000;
 
 	&__video {
 		width: 100%;
@@ -29,19 +32,18 @@
 		line-height: 20px;
 	}
 	.hero {
-		margin-top: 0;
-		height: 433px;
+		height: 400px;
 		&__video {
-			height: 433px;
+			height: 400px;
+			width: 90%;
 		}
 	}
 	@include large {
 		.hero {
-			height: 540px;
+			height: 550px;
 			&__video {
 				height: 540px;
 			}
 		}
-	
 	}
 }
