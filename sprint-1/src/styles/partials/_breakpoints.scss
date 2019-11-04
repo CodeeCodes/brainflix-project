@@ -1,5 +1,9 @@
 /*media query for mobile using max width so that it doesn't have a break at min-width*/
-
+@mixin smallSmall {
+	@media only screen and (max-width: 600px) {
+		@content;
+	}
+}
 @mixin small {
 	@media only screen and (max-width: 767px) {
 		@content;

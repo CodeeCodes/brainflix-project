@@ -327,7 +327,7 @@ h5 {
     line-height: 20px;
   }
   .movie__heading {
-    margin-right: 33px;
+    margin-right: 31%;
     margin-bottom: 24px;
   }
   .movie__heading-two {
@@ -391,9 +391,7 @@ h5 {
 
 .comments__input-heading {
   opacity: 0.5;
-  margin-left: 20%;
-  margin-top: 32px;
-  margin-bottom: 0;
+  margin: 32px 0 0 20%;
 }
 
 .comments__input-text {

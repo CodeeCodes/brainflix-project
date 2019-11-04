@@ -16,9 +16,7 @@
 	}
 	&__input-heading {
 		opacity: 0.5;
-		margin-left: 20%;
-		margin-top: 32px;
-		margin-bottom: 0;
+		margin: 32px 0 0 20%;
 	}
 	&__input-text {
 		border: 1px solid #0065ad;
@@ -69,6 +67,7 @@
 		justify-content: space-between;
 	}
 }
+
 @include medium {
 	h1 {
 		font-size: 36px;

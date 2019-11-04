@@ -72,7 +72,7 @@
 	}
 	.movie {
 		&__heading {
-			margin-right: 33px;
+			margin-right: 31%;
 			margin-bottom: 24px;
 
 			&-two {
@@ -104,7 +104,6 @@
 			width: 72%;
 		}
 	}
-
 }
 @include large {
 	.movie {
