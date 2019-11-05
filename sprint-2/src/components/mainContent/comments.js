@@ -4,8 +4,8 @@ import avatar from "../../assets/Images/Mohan-muruge.jpg";
 export default function Comments(props) {
 	// console.log(props.data);
 	const newComments =
-		props.data.comments &&
-		props.data.comments.map(function(comment, index) {
+		props.comments.comments &&
+		props.comments.comments.map(function(comment, index) {
 			return (
 				<div className="comments__input-div" key={index}>
 					<img
