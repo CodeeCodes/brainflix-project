@@ -3,10 +3,11 @@ import { Link } from "react-router-dom";
 
 export default function NextVideo(props) {
 	// console.log(props);
+
 	return (
 		<div className="next__video-main">
-			{props.mainVideo.length > 0 ? (
-				props.mainVideo.map((video) => (
+			{props.nextVideo.length > 0 ? (
+				props.nextVideo.map((video) => (
 					<Link
 						to={`/nextVideo/${video.id}`}
 						className="next__video"

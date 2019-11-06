@@ -2,7 +2,7 @@ import React from "react";
 import avatar from "../../assets/Images/Mohan-muruge.jpg";
 
 export default function Comments(props) {
-	// console.log(props.data);
+	// console.log(props.comments);
 	const newComments =
 		props.comments.comments &&
 		props.comments.comments.map(function(comment, index) {
