@@ -18,10 +18,9 @@ export default class mainContent extends Component {
 				`https://project-2-api.herokuapp.com/videos/1af0jruup5gu?api_key=f7d8957a-1a18-4efc-b63a-22a6b2c06be0`
 			)
 			.then((res) => {
-				console.log(res.data);
+				// 	console.log(res.data);
 				this.setState({
-					mainVideo: res.data,
-					videoId: res.data.id
+					mainVideo: res.data
 				});
 			});
 		axios
@@ -31,23 +30,23 @@ export default class mainContent extends Component {
 			.then((res) => {
 				// console.log(res.data);
 				this.setState({
-					sideVideos: res.data
+					sideVideos: res.data,
+					videoId: res.data.id
 				});
 			});
 	}
 
 	componentDidUpdate(prevProps, prevState) {
-		console.log(prevProps);
-		console.log(prevState);
-		console.log(this.state.videoId);
+		console.log(prevState.mainVideo.id);
+		console.log(this.state.mainVideo.id);
 		if (
-			this.state.videoId &&
-			this.state.videoId !== prevState.videoId &&
-			prevState.videoId
+			this.state.mainVideo.id &&
+			this.state.mainVideo.id !== prevState.mainVideo.Id &&
+			prevState.mainVideo.id
 		) {
 			axios
 				.get(
-					`https://project-2-api.herokuapp.com/videos/${this.state.videoId}?api_key=f7d8957a-1a18-4efc-b63a-22a6b2c06be0`
+					`https://project-2-api.herokuapp.com/videos/${this.state.sideVideos[1].id}?api_key=f7d8957a-1a18-4efc-b63a-22a6b2c06be0`
 				)
 				.then((res) => {
 					this.setState({
@@ -67,7 +66,10 @@ export default class mainContent extends Component {
 						<MovieDescription movieDescription={this.state.mainVideo} />
 						<Comments comments={this.state.mainVideo} />
 					</div>
-					<NextVideo nextVideo={this.state.sideVideos} />
+					<NextVideo
+						nextVideo={this.state.sideVideos}
+						mainVideo={this.state.mainVideo}
+					/>
 				</div>
 			</div>
 		);
