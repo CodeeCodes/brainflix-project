@@ -6,23 +6,16 @@ import MovieDescription from "./mainContent/movieDescription";
 import axios from "axios";
 
 export default class mainContent extends Component {
-	state = {
-		sideVideos: [],
-		mainVideo: {},
-		videoId: ""
-	};
+	constructor(props) {
+		super(props);
+		this.state = {
+			sideVideos: [],
+			mainVideo: {},
+			videoId: ""
+		};
+	}
 
 	componentDidMount() {
-		axios
-			.get(
-				`https://project-2-api.herokuapp.com/videos/1af0jruup5gu?api_key=f7d8957a-1a18-4efc-b63a-22a6b2c06be0`
-			)
-			.then((res) => {
-				// 	console.log(res.data);
-				this.setState({
-					mainVideo: res.data
-				});
-			});
 		axios
 			.get(
 				`https://project-2-api.herokuapp.com/videos?api_key=f7d8957a-1a18-4efc-b63a-22a6b2c06be0`
@@ -33,31 +26,38 @@ export default class mainContent extends Component {
 					sideVideos: res.data,
 					videoId: res.data.id
 				});
+
+				axios
+					.get(
+						`https://project-2-api.herokuapp.com/videos/1af0jruup5gu?api_key=f7d8957a-1a18-4efc-b63a-22a6b2c06be0`
+					)
+					.then((res) => {
+						// 	console.log(res.data);
+						this.setState({
+							mainVideo: res.data
+						});
+					});
 			});
 	}
 
 	componentDidUpdate(prevProps, prevState) {
-		console.log(prevState.mainVideo.id);
-		console.log(this.state.mainVideo.id);
-		if (
-			this.state.mainVideo.id &&
-			this.state.mainVideo.id !== prevState.mainVideo.Id &&
-			prevState.mainVideo.id
-		) {
+		let id = this.props.match.params.Id;
+		if (this.props.match.params.Id !== prevProps.match.params.Id) {
 			axios
 				.get(
-					`https://project-2-api.herokuapp.com/videos/${this.state.sideVideos[1].id}?api_key=f7d8957a-1a18-4efc-b63a-22a6b2c06be0`
+					`https://project-2-api.herokuapp.com/videos/${id}?api_key=f7d8957a-1a18-4efc-b63a-22a6b2c06be0`
 				)
 				.then((res) => {
+					console.log(res.data);
 					this.setState({
-						mainVideo: res.data
+						mainVideo: res.data,
+						videoId: res.data.id
 					});
 				});
 		}
 	}
 
 	render() {
-		// console.log(this.state);
 		return (
 			<div>
 				<HeroVideo heroVideo={this.state.mainVideo} />

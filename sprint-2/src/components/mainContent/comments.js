@@ -3,6 +3,7 @@ import avatar from "../../assets/Images/Mohan-muruge.jpg";
 
 export default class Comments extends Component {
 	render() {
+		// console.log(this.props);
 		const newComments =
 			this.props.comments.comments &&
 			this.props.comments.comments.map(function(comment, index) {

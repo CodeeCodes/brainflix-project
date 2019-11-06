@@ -3,11 +3,11 @@ import { Link } from "react-router-dom";
 
 export default class NextVideo extends Component {
 	render() {
-		// console.log(this.props.nextVideo[0] && this.props.nextVideo[0].id);
-		// console.log(this.props.mainVideo.id && this.props.mainVideo.id);
+		console.log(this.props.nextVideo[0]&&this.props.nextVideo[0].id);
+
 		if (
 			this.props.nextVideo[0] &&
-			this.props.nextVideo[0].id === this.props.mainVideo.id &&
+			this.props.nextVideo[0].id !== this.props.mainVideo &&
 			this.props.mainVideo.id
 		) {
 			return (
