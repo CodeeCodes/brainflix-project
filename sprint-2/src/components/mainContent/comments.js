@@ -29,7 +29,7 @@ export default class Comments extends Component {
 			<div className="comments">
 				<form action="" className="comments__form">
 					<h2 className="comments__heading">3 COMMENTS</h2>
-					<h4 className="comments__input-heading">Join the conversation</h4>
+					<h4 className="comments__input-heading">JOIN THE CONVERSATION</h4>
 					<div className="comments__nav">
 						<img
 							src={avatar}

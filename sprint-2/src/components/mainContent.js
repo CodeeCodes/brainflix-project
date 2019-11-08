@@ -41,6 +41,7 @@ export default class mainContent extends Component {
 	}
 
 	componentDidUpdate(prevProps, prevState) {
+		// console.log(prevProps);
 		let id = this.props.match.params.Id;
 		if (this.props.match.params.Id !== prevProps.match.params.Id) {
 			axios
@@ -48,7 +49,7 @@ export default class mainContent extends Component {
 					`https://project-2-api.herokuapp.com/videos/${id}?api_key=f7d8957a-1a18-4efc-b63a-22a6b2c06be0`
 				)
 				.then((res) => {
-					console.log(res.data);
+					// console.log(res.data);
 					this.setState({
 						mainVideo: res.data,
 						videoId: res.data.id

@@ -24,7 +24,7 @@ export default class Header extends Component {
 						className="search-bar-text"
 					></input>
 					<Link to={`/uploadpage`} className="header__search-button">
-						<button className="header__search-button" type="submit">
+						<button type="submit" className="header__search-button">
 							<img src={PlusSign} alt="plus sign" className="plusSign" />
 							UPLOAD
 						</button>
