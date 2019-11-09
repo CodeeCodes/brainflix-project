@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import image from "../assets/Images/Mohan-muruge.jpg";
+import image from "../assets/Images/Upload-video-preview.jpg";
 import { Link } from "react-router-dom";
 export default class uploadPage extends Component {
 	render() {

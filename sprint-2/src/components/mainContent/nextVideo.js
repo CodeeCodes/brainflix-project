@@ -6,12 +6,12 @@ export default function NextVideo({ nextVideo, mainVideo }) {
 		nextVideo &&
 		nextVideo.map(function(video) {
 			return (
-				<>
+				<div className="next__video-main-div" key={video.id}>
 					{video.id !== mainVideo.id ? (
 						<Link
 							to={`/nextvideo/${video.id}`}
 							className="next__video"
-							key={video.id}
+						
 						>
 							<img
 								src={video.image}
@@ -26,7 +26,7 @@ export default function NextVideo({ nextVideo, mainVideo }) {
 					) : (
 						<div key={video.id} className="hide"></div>
 					)}
-				</>
+				</div>
 			);
 		});
 

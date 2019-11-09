@@ -3,7 +3,13 @@ import avatar from "../../assets/Images/Mohan-muruge.jpg";
 
 export default class Comments extends Component {
 	render() {
-		// console.log(this.props);
+		let timeStamp = this.props.comments.timestamp;
+		var toDate = new Date(timeStamp).getDate();
+		var toMonth = new Date(timeStamp).getMonth() + 1;
+		var toYear = new Date(timeStamp).getFullYear();
+		var originalDate = toMonth + "/" + toDate + "/" + toYear;
+
+		console.log(this.props);
 		const newComments =
 			this.props.comments.comments &&
 			this.props.comments.comments.map(function(comment, index) {
@@ -17,7 +23,7 @@ export default class Comments extends Component {
 						<div className="comments__input-div-info">
 							<div className="comments__flex">
 								<h3 className="comments__input-div-heading">{comment.name}</h3>
-								<h4 className="comments__input-div-date">{comment.date}</h4>
+								<h4 className="comments__input-div-date">{originalDate}</h4>
 							</div>
 							<p className="comments__input-div-paragraph">{comment.comment}</p>
 						</div>
