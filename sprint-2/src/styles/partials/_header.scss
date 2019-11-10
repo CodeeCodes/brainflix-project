@@ -127,6 +127,15 @@
 			&__search-avatar {
 				margin-left: 3.9%;
 			}
+			&__search-logo {
+				width: 20%;
+			}
+			&__search-bar {
+				margin-left: 40%;
+				&-text {
+					width: 68%;
+				}
+			}
 		}
 	}
 }
