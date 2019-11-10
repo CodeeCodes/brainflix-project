@@ -17,6 +17,11 @@
 		@content;
 	}
 }
+@mixin mediumLarge {
+	@media only screen and (min-width: 768px) {
+		@content;
+	}
+}
 /*media query for  landscape, large pixel density desktop*/
 
 @mixin large {
