@@ -81,19 +81,21 @@
 		padding-bottom: 16px;
 		margin-left: 5%;
 		margin-right: 5%;
+		border-bottom: 1px solid $dividerColour;
 
 		&__search-button {
-			width: 90px;
+			width: 100%;
 			margin-left: 6%;
 		}
 		a {
 			margin-top: 15px;
+			width: 103px;
 		}
 		&__search-bar {
 			justify-content: flex-start;
 			height: 80px;
 			width: 70%;
-			margin-left: 28.5%;
+			margin-left: 25%;
 		}
 
 		&__search-avatar {

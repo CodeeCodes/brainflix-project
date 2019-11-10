@@ -170,13 +170,15 @@ h5 {
     padding-bottom: 16px;
     margin-left: 5%;
     margin-right: 5%;
+    border-bottom: 1px solid #d5d2d1;
   }
   .header__search-button {
-    width: 90px;
+    width: 100%;
     margin-left: 6%;
   }
   .header a {
     margin-top: 15px;
+    width: 103px;
   }
   .header__search-bar {
     -webkit-box-pack: start;
@@ -184,7 +186,7 @@ h5 {
             justify-content: flex-start;
     height: 80px;
     width: 70%;
-    margin-left: 28.5%;
+    margin-left: 25%;
   }
   .header__search-avatar {
     margin: 0;
@@ -746,6 +748,7 @@ a-heading-bold {
 
 .upload__input-image {
   width: 100%;
+  border-radius: 4px;
 }
 
 .upload__button {
@@ -797,6 +800,77 @@ a-heading-bold {
   h5 {
     font-size: 12px;
     line-height: 20px;
+  }
+  .upload__button {
+    width: 160px;
+    margin: 0;
+    margin-left: 48px;
+  }
+  .upload__button-div {
+    margin-top: 40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 100px;
+  }
+  .upload__button-cancel {
+    margin: 0;
+    margin-left: 60%;
+    margin-top: 12px;
+  }
+  .upload__heading {
+    margin-top: 48px;
+    padding-bottom: 32px;
+    border-bottom: 1px solid #d5d2d1;
+  }
+  .upload__heading-small {
+    margin: 0;
+  }
+  .upload__input-image {
+    width: 49.8%;
+    margin-bottom: 40px;
+  }
+  .upload__heading-div {
+    margin-bottom: 24px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #d5d2d1;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .upload {
+    margin-left: 12.5%;
+    margin-right: 12.5%;
+  }
+  .upload__button-cancel {
+    margin-left: 75%;
+  }
+  .upload__input-image {
+    width: 59%;
+    height: 183px;
+  }
+  .upload__heading-div {
+    border-bottom: none;
+    padding-bottom: 0;
+    margin-bottom: 24px;
+  }
+  .upload__heading-div-small {
+    width: 55%;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #d5d2d1;
+  }
+  .upload__heading-div-main {
+    width: 45%;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #d5d2d1;
+  }
+  .upload__flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .upload__input-two {
+    height: 94px;
   }
 }
 /*# sourceMappingURL=main.css.map */

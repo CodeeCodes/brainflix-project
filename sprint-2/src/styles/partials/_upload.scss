@@ -22,6 +22,7 @@
 	}
 	&__input-image {
 		width: 100%;
+		border-radius: 4px;
 	}
 	&__button {
 		display: flex;
@@ -64,5 +65,76 @@
 	h5 {
 		font-size: 12px;
 		line-height: 20px;
+	}
+	.upload {
+		&__button {
+			width: 160px;
+			margin: 0;
+			margin-left: 48px;
+
+			&-div {
+				margin-top: 40px;
+				display: flex;
+				margin-bottom: 100px;
+			}
+			&-cancel {
+				margin: 0;
+				margin-left: 60%;
+				margin-top: 12px;
+			}
+		}
+		&__heading {
+			margin-top: 48px;
+			padding-bottom: 32px;
+			border-bottom: 1px solid $dividerColour;
+		}
+		&__heading-small {
+			margin: 0;
+		}
+		&__input-image {
+			width: 49.8%;
+			margin-bottom: 40px;
+		}
+		&__heading-div {
+			margin-bottom: 24px;
+			padding-bottom: 40px;
+			border-bottom: 1px solid $dividerColour;
+		}
+	}
+}
+@include large {
+	.upload {
+		margin-left: 12.5%;
+		margin-right: 12.5%;
+		&__button {
+			&-cancel {
+				margin-left: 75%;
+			}
+		}
+	}
+	.upload__input-image {
+		width: 59%;
+		height: 183px;
+	}
+	.upload__heading-div {
+		border-bottom: none;
+		padding-bottom: 0;
+		margin-bottom: 24px;
+		&-small {
+			width: 55%;
+			padding-bottom: 5px;
+			border-bottom: 1px solid $dividerColour;
+		}
+		&-main {
+			width: 45%;
+			padding-bottom: 5px;
+			border-bottom: 1px solid $dividerColour;
+		}
+	}
+	.upload__flex {
+		display: flex;
+	}
+	.upload__input-two {
+		height: 94px;
 	}
 }

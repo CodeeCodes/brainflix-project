@@ -9,7 +9,7 @@ export default class Comments extends Component {
 		var toYear = new Date(timeStamp).getFullYear();
 		var originalDate = toMonth + "/" + toDate + "/" + toYear;
 
-		console.log(this.props);
+		
 		const newComments =
 			this.props.comments.comments &&
 			this.props.comments.comments.map(function(comment, index) {
