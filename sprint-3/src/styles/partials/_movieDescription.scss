@@ -1,0 +1,124 @@
+.movie {
+	&__description {
+		display: flex;
+		justify-content: left;
+		flex-wrap: wrap;
+	}
+	&__paragraph {
+		padding-top: 24px;
+		border-top: 1px solid $dividerColour;
+		margin-top: 0;
+	}
+	&__icons {
+		height: 20px;
+		margin-top: 4px;
+		margin-right: 2.8%;
+		&-div {
+			display: flex;
+		}
+	}
+
+	&__heading {
+		margin-top: 0;
+		margin-right: 19px;
+		font-family: "AvenirBold";
+	}
+	&__heading-three {
+		margin: 0 6.5% 24px 0;
+		font-family: "AvenirULight";
+	}
+	&__heading-two {
+		margin-right: 2.8%;
+		margin-top: 0;
+		margin-bottom: 32px;
+		font-family: "AvenirBold";
+	}
+	&__heading-two-special {
+		margin-right: 20%;
+		margin-top: 0;
+		margin-bottom: 32px;
+		font-family: "AvenirULight";
+		opacity: 0.6;
+	}
+	&__paragraph-text {
+		margin: 0;
+		text-align: justify;
+	}
+}
+
+.flex-movie-icons {
+	display: flex;
+	justify-content: space-evenly;
+	height: 20px;
+}
+
+@include medium {
+	h1 {
+		font-size: 36px;
+		line-height: 44px;
+	}
+	h2 {
+		font-size: 24px;
+		line-height: 32px;
+	}
+	h3 {
+		font-size: 16px;
+		line-height: 24px;
+	}
+	h4 {
+		font-size: 14px;
+		line-height: 20px;
+	}
+	h5 {
+		font-size: 12px;
+		line-height: 20px;
+	}
+	.movie {
+		&__heading {
+			margin-right: 46%;
+			margin-bottom: 24px;
+
+			&-two {
+				margin-top: 0;
+				margin-bottom: 0;
+				margin-left: 1%;
+				height: 24px;
+			}
+			&-three {
+				margin-right: 4%;
+				margin-bottom: 0;
+				margin-left: 1.14%;
+			}
+		}
+		&__heading-two-special {
+			margin: 0 31% 0 0;
+		}
+
+		&__icons {
+			height: 24px;
+			margin-right: 0;
+			margin-top: 1px;
+		}
+		&__paragraph {
+			margin-top: 24px;
+			padding-top: 40px;
+		}
+		&__paragraph-text {
+			width: 72%;
+		}
+	}
+}
+@include large {
+	.movie {
+		&__heading {
+			margin-right: 40%;
+
+			&-two-special {
+				margin-right: 30%;
+			}
+			&-three {
+				margin-right: 4.5%;
+			}
+		}
+	}
+}

@@ -1,0 +1,141 @@
+.header {
+	margin: 0 5%;
+	height: 169px;
+
+	&__search-logo {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-bottom: 5px;
+		height: 38px;
+	}
+	&__search-bar {
+		width: 100%;
+		height: 115px;
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	&__search-button {
+		display: flex;
+		justify-content: center;
+		width: 221px;
+		height: 48px;
+		border-radius: 4px;
+		padding: 0;
+		color: #fff;
+		border: 0;
+		background-color: #0095ff;
+	}
+	a {
+		margin-top: 8px;
+		margin-bottom: 0;
+	}
+	&__search-avatar {
+		width: 50px;
+		height: 50px;
+		border-radius: 50%;
+		margin-left: 5.6%;
+		margin-top: 8px;
+	}
+	.search-bar-text {
+		background-image: url("../assets/Icons/svg/Icon-search.svg");
+		background-repeat: no-repeat;
+		background-position: left;
+		width: 100%;
+		height: 49px;
+		padding-left: 35px;
+		border-radius: 4px;
+	}
+	.search-bar-text:focus {
+		background-image: none;
+	}
+	.plusSign {
+		padding-right: 5%;
+	}
+}
+@include medium {
+	h1 {
+		font-size: 36px;
+		line-height: 44px;
+	}
+	h2 {
+		font-size: 24px;
+		line-height: 32px;
+	}
+	h3 {
+		font-size: 16px;
+		line-height: 24px;
+	}
+	h4 {
+		font-size: 14px;
+		line-height: 20px;
+	}
+	h5 {
+		font-size: 12px;
+		line-height: 20px;
+	}
+	.header {
+		display: flex;
+		height: 80px;
+		padding-bottom: 16px;
+		margin-left: 5%;
+		margin-right: 5%;
+		border-bottom: 1px solid $dividerColour;
+
+		&__search-button {
+			width: 100%;
+			margin-left: 6%;
+		}
+		a {
+			margin-top: 15px;
+			width: 103px;
+		}
+		&__search-bar {
+			justify-content: flex-start;
+			height: 80px;
+			width: 70%;
+			margin-left: 25%;
+		}
+
+		&__search-avatar {
+			margin: 0;
+			margin-top: 15px;
+			margin-left: 6.5%;
+		}
+		&__search-logo {
+			margin-top: 20px;
+		}
+		.search-bar-text {
+			width: 50%;
+			margin-top: 16px;
+		}
+	}
+	@include large {
+		.header {
+			margin-left: 12.5%;
+			margin-right: 12.5%;
+
+			&__search-button {
+				width: 130px;
+				margin-left: 6%;
+			}
+			a {
+				margin-left: 4%;
+			}
+
+			&__search-avatar {
+				margin-left: 3.9%;
+			}
+			&__search-logo {
+				width: 20%;
+			}
+			&__search-bar {
+				margin-left: 40%;
+				&-text {
+					width: 68%;
+				}
+			}
+		}
+	}
+}
