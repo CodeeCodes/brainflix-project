@@ -43,6 +43,10 @@
 			color: #0095ff;
 			font-family: "AvenirBold";
 		}
+		&-div {
+			display: flex;
+			flex-direction: column-reverse;
+		}
 	}
 }
 @include medium {
@@ -74,7 +78,7 @@
 
 			&-div {
 				margin-top: 40px;
-				display: flex;
+				flex-direction: row;
 				margin-bottom: 100px;
 			}
 			&-cancel {
@@ -143,5 +147,4 @@
 			border-bottom: 1px solid $dividerColour;
 		}
 	}
-
 }
