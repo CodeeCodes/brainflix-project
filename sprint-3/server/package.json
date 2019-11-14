@@ -4,8 +4,11 @@
   "description": "brainflix-project codee palmer",
   "main": "index.js",
   "scripts": {
+    "test": "",
     "start": "node index",
-    "dev": "nodemon index"
+    "client": "npm start --prefix ../client",
+    "server": "nodemon index",
+    "dev": "concurrently \"npm run server\"\"npm run client"
   },
   "keywords": [
     "brainflix",

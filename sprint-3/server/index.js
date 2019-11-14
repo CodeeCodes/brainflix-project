@@ -1,4 +1,4 @@
-const videos = require("./apiVideos");
+const videos = require("./routes/apiVideos");
 const path = require("path");
 const express = require("express");
 const app = express();
