@@ -4,12 +4,12 @@ import { Link } from "react-router-dom";
 export default class uploadPage extends Component {
   render() {
     return (
-      <form action="/" method="POST " className="upload">
+      <form action="/" method="POST" className="upload">
         <h1 className="upload__heading">Upload Video</h1>
         <div className="upload__flex">
           <div className="upload__heading-div-main">
             <h4 className="upload__heading-small">VIDEO THUMBNAIL</h4>
-            <img src={image} alt="" className="upload__input-image" />
+            <img src={image} alt="video" name="image" className="upload__input-image" />
           </div>
           <div className="upload__heading-div-small">
             <div className="upload__heading-div">

@@ -409,13 +409,22 @@ h5 {
 
 @media only screen and (min-width: 1440px) {
   .movie__heading {
-    margin-right: 40%;
+    margin-right: 45%;
   }
   .movie__heading-two-special {
     margin-right: 30%;
   }
   .movie__heading-three {
     margin-right: 4.5%;
+  }
+}
+
+@media only screen and (min-width: 2500px) {
+  .movie__heading {
+    margin-right: 53%;
+  }
+  .movie__heading-two {
+    margin-left: 0;
   }
 }
 
