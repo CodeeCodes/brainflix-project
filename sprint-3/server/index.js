@@ -1,21 +1,17 @@
-const videos = require("./routes/apiVideos");
-const path = require("path");
 const express = require("express");
+const logger = require("./middleware/logger");
+const cors = require("cors");
 const app = express();
 
-app.get("/api/videos", (req, res) => {
-  res.json(videos);
-});
+app.use(logger);
 
-// app.get("/", (req, res) => {
-//   res.sendFile(path.join(__dirname, "public", "index.html"));
-// });
+app.use(cors());
 
-// app.use(
-//   express.static(
-//     "/Users/codeepalmer/Desktop/brainflix-codee-palmer/sprint-3/client/public/index.html"
-//   )
-// );
+app.use(express.json());
+
+app.use("/videos", require("./routes/videos"));
+
+// app.use(express.static(path.join(__dirname, "public")));
 
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => console.log(`port is running on ${PORT}`, __filename));
