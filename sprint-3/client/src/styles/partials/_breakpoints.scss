@@ -1,0 +1,36 @@
+/*media query for mobile using max width so that it doesn't have a break at min-width*/
+@mixin smallSmall {
+	@media only screen and (max-width: 600px) {
+		@content;
+	}
+}
+@mixin small {
+	@media only screen and (max-width: 767px) {
+		@content;
+	}
+}
+
+/*media query for tablet*/
+
+@mixin medium {
+	@media only screen and (min-width: 768px) {
+		@content;
+	}
+}
+@mixin mediumLarge {
+	@media only screen and (min-width: 768px) {
+		@content;
+	}
+}
+/*media query for  landscape, large pixel density desktop*/
+
+@mixin large {
+	@media only screen and (min-width: 1440px) {
+		@content;
+	}
+}
+@mixin extraLarge {
+	@media only screen and (min-width: 2500px) {
+		@content;
+	}
+}
