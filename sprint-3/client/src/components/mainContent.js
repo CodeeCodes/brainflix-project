@@ -40,7 +40,10 @@ export default class mainContent extends Component {
         });
       });
     }
+
   }
+
+
 
   render() {
     return (
