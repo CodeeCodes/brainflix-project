@@ -7,22 +7,19 @@ const url = `http://localhost:5000/videos`;
 export default class uploadPage extends Component {
   uploadVideo = event => {
     event.preventDefault();
-    // console.log(event.target.channel.value)
-    // console.log(event.target.title.value)
-
     axios
       .post(url, {
         channel: event.target.channel.value,
         title: event.target.title.value,
-        image:{image}
+        image: image
       })
       .then(res => {
         console.log(res);
       });
+    event.target.reset();
   };
 
   render() {
-    console.log(this.state);
     return (
       <form
         action='/'

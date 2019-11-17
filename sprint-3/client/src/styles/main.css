@@ -245,6 +245,10 @@ h5 {
   height: 183px;
 }
 
+.hero__video ::poster {
+  width: 100%;
+}
+
 @media only screen and (min-width: 768px) {
   h1 {
     font-size: 36px;

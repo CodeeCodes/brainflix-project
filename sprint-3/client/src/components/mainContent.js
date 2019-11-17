@@ -40,17 +40,14 @@ export default class mainContent extends Component {
         });
       });
     }
-
   }
-
-
 
   render() {
     return (
       <div>
         <HeroVideo heroVideo={this.state.mainVideo} />
-        <div className="main-desktop-flex">
-          <div className="main-movie-div">
+        <div className='main-desktop-flex'>
+          <div className='main-movie-div'>
             <MovieDescription
               movieDescription={this.state.mainVideo && this.state.mainVideo}
             />
