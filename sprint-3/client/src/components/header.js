@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import Logo from "../assets/Logo/Logo-brainflix.svg";
 import avatar from "../assets/Images/Mohan-muruge.jpg";
 import PlusSign from "../assets/Icons/svg/Icon-upload.svg";
-import MagGlass from "../assets/Icons/svg/Icon-search.svg";
 import { Link } from "react-router-dom";
 
 export default class Header extends Component {

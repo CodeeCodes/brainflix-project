@@ -47,7 +47,7 @@ export default class uploadPage extends Component {
               <h4 className='upload__heading-small'>TITLE YOUR VIDEO</h4>
               <input
                 type='text'
-                name='channel'
+                name='title'
                 placeholder='Add a title to your video'
                 className='upload__input-one'
               />
@@ -57,7 +57,7 @@ export default class uploadPage extends Component {
               <h4 className='upload__heading-small'>ADD A VIDEO DESCRIPTION</h4>
               <input
                 type='text'
-                name='title'
+                name='channel'
                 placeholder='Add a description of your video'
                 className='upload__input-two'
               />
