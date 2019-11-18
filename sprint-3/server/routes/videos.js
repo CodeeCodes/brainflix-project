@@ -77,7 +77,7 @@ router.post("/", (req, res) => {
   const newVideoSide = {
     id: newVideo.id,
     title: req.body.title,
-    channel: "new user",
+    channel:"Newest Member Of BrainFlix",
     description: req.body.channel,
     image: req.body.image
   };
