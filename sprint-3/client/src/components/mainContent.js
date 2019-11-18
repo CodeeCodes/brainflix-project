@@ -23,6 +23,7 @@ export default class mainContent extends Component {
       });
 
       axios.get(`http://localhost:5000/videos/1af0jruup5gu`).then(res => {
+        console.log(res);
         this.setState({
           mainVideo: res.data[0]
         });

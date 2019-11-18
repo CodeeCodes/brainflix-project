@@ -21,6 +21,7 @@ export default class uploadPage extends Component {
           console.log(res);
         });
       event.target.reset();
+      // this.props.history.push("/");
     }
   };
 
@@ -69,6 +70,7 @@ export default class uploadPage extends Component {
           <Link to={"/"} className='upload__button-cancel'>
             CANCEL
           </Link>
+
           <button className='upload__button'>PUBLISH</button>
         </div>
       </form>
