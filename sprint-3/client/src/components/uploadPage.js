@@ -7,16 +7,21 @@ const url = `http://localhost:5000/videos`;
 export default class uploadPage extends Component {
   uploadVideo = event => {
     event.preventDefault();
-    axios
-      .post(url, {
-        channel: event.target.channel.value,
-        title: event.target.title.value,
-        image: image
-      })
-      .then(res => {
-        console.log(res);
-      });
-    event.target.reset();
+
+    if (!event.target.channel.value || !event.target.title.value) {
+      alert("Please enter A title, channel and video link. Thank you!");
+    } else {
+      axios
+        .post(url, {
+          channel: event.target.channel.value,
+          title: event.target.title.value,
+          image: image
+        })
+        .then(res => {
+          console.log(res);
+        });
+      event.target.reset();
+    }
   };
 
   render() {

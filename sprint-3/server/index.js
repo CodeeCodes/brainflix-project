@@ -14,4 +14,4 @@ app.use("/videos", require("./routes/videos"));
 // app.use(express.static(path.join(__dirname, "public")));
 
 const PORT = process.env.PORT || 5000;
-app.listen(PORT, () => console.log(`port is running on ${PORT}`,__dirname));
+app.listen(PORT, () => console.log(`port is running on ${PORT}`, __filename));
