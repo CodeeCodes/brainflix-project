@@ -17,11 +17,8 @@ export default class uploadPage extends Component {
           title: event.target.title.value,
           image: image
         })
-        .then(res => {
-          console.log(res);
-        });
+        .then(res => {});
       event.target.reset();
-      // this.props.history.push("/");
     }
   };
 
@@ -70,7 +67,6 @@ export default class uploadPage extends Component {
           <Link to={"/"} className='upload__button-cancel'>
             CANCEL
           </Link>
-
           <button className='upload__button'>PUBLISH</button>
         </div>
       </form>
